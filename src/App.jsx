@@ -80,7 +80,6 @@ function Hero() {
     <section className="pg" style={{ padding: 0, color: '#fff', background: '#000' }}>
       <div id="hero" />
       <div style={{ position: 'relative', padding: 20 }}>
-        <div className="ganesh gold">🕉</div>
         <p className="sml">We are getting married</p>
         <h1 className="gold" style={{ fontSize: 'clamp(40px,12vw,56px)', margin: '14px 0' }}>{INFO.groom}<br /><i style={{ fontSize: '.6em' }}>&amp;</i><br />{INFO.bride}</h1>
         <p className="sml">02 · 01 · 2027</p>
@@ -246,7 +245,7 @@ function Location() {
   const [copied, setCopied] = useState(false);
   const copy = async () => {
     try { await navigator.clipboard.writeText(INFO.address); }
-    catch { const x = document.createElement('textarea'); x.value = INFO.address; document.body.appendChild(x); x.select(); try { document.execCommand('copy'); } catch {} x.remove(); }
+    catch { const x = document.createElement('textarea'); x.value = INFO.address; document.body.appendChild(x); x.select(); try { document.execCommand('copy'); } catch { } x.remove(); }
     setCopied(true); setTimeout(() => setCopied(false), 2000);
   };
   return (
@@ -297,7 +296,7 @@ export default function App() {
   useEffect(() => { document.body.style.overflow = 'hidden'; }, []);
   const start = () => {
     document.body.style.overflow = '';
-    audio.current?.play().then(() => setPlaying(true)).catch(() => {}); // browsers need a tap first
+    audio.current?.play().then(() => setPlaying(true)).catch(() => { }); // browsers need a tap first
   };
   const toggle = () => {
     const a = audio.current;
