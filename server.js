@@ -1,0 +1,11 @@
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const app = express();
+const dist = path.join(__dirname, 'dist');
+app.use(express.static(dist, { maxAge: '7d' }));
+app.get('/api/health', (_, res) => res.json({ ok: true }));
+app.get('*', (_, res) => res.sendFile(path.join(dist, 'index.html')));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`Invitation running at http://localhost:${PORT}`));
