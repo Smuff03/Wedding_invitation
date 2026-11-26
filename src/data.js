@@ -13,9 +13,9 @@ export const INFO = {
   music: '/music/song.mp3', // put your song at public/music/song.mp3
 };
 export const EVENTS = [
-  { n: 'Engagement', i: '💍', d: 'Friday, 1 January 2027', t: '4:30 PM – 6:00 PM', dr: 'Pastel / Ethnic', c: '#8a2a3d', note: 'Ring ceremony followed by dinner' },
-  { n: 'Sangeet', i: '🪷', d: 'Friday, 1 January 2027', t: '8:00 PM – 10:00 PM', dr: 'Festive / Glam', c: '#a0457a', note: 'Henna artists, music and games' },
-  { n: 'Haldi', i: '🌼', d: 'Saturday, 2 January 2027', t: '10:00 AM – 1:00 PM', dr: 'Yellow / White', c: '#d19a12', note: 'Wear yellow & play with turmeric!' },
+  { n: 'Engagement', i: '💍', d: 'Friday, 1 January 2027', t: '4:30 PM – 6:00 PM', dr: 'South Indian Traditional', c: '#8a2a3d', note: 'Ring ceremony followed by dinner' },
+  { n: 'Sangeet', i: '🪷', d: 'Friday, 1 January 2027', t: '8:00 PM – 10:00 PM', dr: 'Western', c: '#a0457a', note: 'Henna artists, music and games' },
+  { n: 'Haldi', i: '🌼', d: 'Saturday, 2 January 2027', t: '10:00 AM – 1:00 PM', dr: 'Pastel shade outfit', c: '#d19a12', note: 'Wear yellow & play with turmeric!' },
   { n: 'Wedding Ceremony', i: '🕉️', d: 'Saturday, 2 January 2027', t: '5:00 PM – 7:00 PM · Muhurat 5:55 PM', dr: 'Traditional Maharashtrian', c: '#6e1f2f', note: 'Vivah Vidhi around the sacred fire' },
   { n: 'Reception', i: '🎉', d: 'Saturday, 2 January 2027', t: '8:00 PM – 11:00 PM', dr: 'Formal / Indo-western', c: '#4a3a6a', note: 'Dinner, dance and celebrations' },
 ];
