@@ -185,7 +185,6 @@ function Functions() {
             <p>📅 {e.d}</p><p>🕒 {e.t}</p>
             <p>📍 {INFO.venue}, Ambole, Pali</p>
             <p>👗 Dress code: {e.dr}</p>
-            <p><span className="sw" style={{ background: e.c }} />Theme: {e.cn}</p>
             <p style={{ fontStyle: 'italic', opacity: .85 }}>{e.note}</p>
           </div>
         ))}
