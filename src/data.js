@@ -21,7 +21,6 @@ export const EVENTS = [
 ];
 export const STORY = [
   ['a', 'Where every story begins…'],
-  ['b', 'In a garden of white roses, we found our forever'],
   ['u', 'Held close, hearts at ease'],
   ['h', 'You are my sunrise and my sunset'],
   ['r', 'With this ring, a promise for life'],
