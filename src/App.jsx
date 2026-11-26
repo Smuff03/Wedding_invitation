@@ -65,7 +65,7 @@ function Book({ onOpen }) {
           <div className="in" />
           <div className="ganesh gold" style={{ fontSize: 56 }}>🕉</div>
           <p className="pf gold" style={{ fontSize: 15, marginTop: 8 }}>॥ श्री गणेशाय नमः ॥</p>
-          <h2 className="pf gold" style={{ fontSize: 22, marginTop: 20 }}>{INFO.groom} &amp; {INFO.bride}</h2>
+          <h2 className="pf gold" style={{ fontSize: 22, marginTop: 20 }}>{INFO.bride} &amp; {INFO.groom}</h2>
         </div>
       </div>
       <Rose pos={{ left: '8%', top: '12%' }} /><Rose pos={{ right: '7%', top: '18%', fontSize: 38 }} />
@@ -81,7 +81,7 @@ function Hero() {
       <div id="hero" />
       <div style={{ position: 'relative', padding: 20 }}>
         <p className="sml">We are getting married</p>
-        <h1 className="gold" style={{ fontSize: 'clamp(40px,12vw,56px)', margin: '14px 0' }}>{INFO.groom}<br /><i style={{ fontSize: '.6em' }}>&amp;</i><br />{INFO.bride}</h1>
+        <h1 className="gold" style={{ fontSize: 'clamp(40px,12vw,56px)', margin: '14px 0' }}>{INFO.bride}<br /><i style={{ fontSize: '.6em' }}>&amp;</i><br />{INFO.groom}</h1>
         <p className="sml">02 · 01 · 2027</p>
         <p className="sml" style={{ marginTop: 40, animation: 'tw 2s infinite' }}>Scroll ↓</p>
       </div>
@@ -96,13 +96,12 @@ function Invite() {
     <section className="pg" id="p2" ref={ref}>
       <Mar pos={{ left: '10%' }} /><Mar pos={{ left: '30%' }} d={.5} /><Mar pos={{ right: '30%' }} d={1} /><Mar pos={{ right: '10%' }} d={1.5} />
       <div className="border">
-        <div className="ganesh gold">🕉</div>
         <p className="sml">Together with their families</p>
-        <Typed text={INFO.groom} start={seen} />
-        <p>Son of<br /><b>{INFO.groomParents[0]}</b> &amp; <b>{INFO.groomParents[1]}</b></p>
-        <div className="amp gold">&amp;</div>
-        <Typed text={INFO.bride} start={seen} delay={1400} />
+        <Typed text={INFO.bride} start={seen} />
         <p>Daughter of<br /><b>{INFO.brideParents[0]}</b> &amp; <b>{INFO.brideParents[1]}</b></p>
+        <div className="amp gold">&amp;</div>
+        <Typed text={INFO.groom} start={seen} delay={1400} />
+        <p>Son of<br /><b>{INFO.groomParents[0]}</b> &amp; <b>{INFO.groomParents[1]}</b></p>
         <p className="pf" style={{ fontStyle: 'italic', marginTop: 12, lineHeight: 1.6, color: 'var(--wine)' }}>
           request the pleasure of your company as we begin our journey of love and togetherness. Your blessings will make our day complete.
         </p>
@@ -140,7 +139,6 @@ function SaveDate() {
   return (
     <section className="pg" id="p3">
       <Rose pos={{ left: -6, top: 30 }} /><Rose pos={{ right: -6, top: 30 }} />
-      <div className="ganesh gold">🕉</div>
       <h2 className="pf gold" style={{ fontSize: 34 }}>Save the Date</h2>
       <p className="sml">{open ? 'Save the date' : 'Pull the tassel'}</p>
       <div className="scrollwrap">
@@ -279,10 +277,9 @@ function Closing() {
       <Mar pos={{ left: '12%' }} /><Mar pos={{ left: '32%' }} d={.7} /><Mar pos={{ right: '32%' }} d={1.2} /><Mar pos={{ right: '12%' }} d={.3} />
       <Rose pos={{ left: '4%', bottom: '6%' }} /><Rose pos={{ right: '4%', bottom: '6%' }} />
       <div className={'rv' + (seen ? ' in' : '')}>
-        <div className="ganesh gold" style={{ fontSize: 54 }}>🕉</div>
         <h2 className="pf" style={{ fontSize: 30, color: 'var(--wine)', margin: '18px 0', lineHeight: 1.35 }}>WE CAN'T WAIT TO CELEBRATE WITH YOU!</h2>
-        <p className="pf gold" style={{ fontSize: 26 }}>{INFO.groom} &amp; {INFO.bride}</p>
-        <p style={{ marginTop: 22, fontSize: 13 }}>With love,<br />the <b>Telange</b> and <b>Khade</b> families</p>
+        <p className="pf gold" style={{ fontSize: 26 }}>{INFO.bride} &amp; {INFO.groom}</p>
+        <p style={{ marginTop: 22, fontSize: 13 }}>With love,<br />the <b>Khade</b> and <b>Telange</b> families</p>
       </div>
     </section>
   );
